@@ -2,25 +2,28 @@
 
 Find the link station with the most power.
 
-## Server installation
+## I. Server
+
+### 1. Installation
 Install the dependencies and devDependencies to start the server:
 ```
 cd ./server
 yarn install
+```
+
+### 2. Usage
+```
 yarn run dev
 ```
 The server is started locally and you can visit url `http://localhost:5555`
 
-## Client installation
-Open a new terminal tab and run the following commands to start the single-page app:
+### 3. Test suit
+Use the following command to run the test suit in server:
 ```
-cd ./client
-yarn install
-yarn start
+yarn test
 ```
-You can now access the site browsing to `http://localhost:3000`
 
-## Testing Dockerfile
+### 4. Testing Dockerfile
 Build the docker image
 ```
 docker build . -t tsnode
@@ -36,15 +39,24 @@ Remove the container after testing
 docker rm -f linkstationapp
 ```
 
-## Test suit
-Use the following command to run the test suit in server:
+
+## II. Client App
+
+### 1. Installation
+Open a new terminal tab and run the following commands to start the single-page app:
 ```
-yarn test
+cd ./client
+yarn install
+yarn start
 ```
 
-## Zipping up file for deployment
-Run the `build.sh` shell script and upload the zip file to AWS Elastic Beanstalk
+### 2. Usage
+```
+yarn start
+```
+You can now access the site browsing to `http://localhost:3000`
 
-## AWS Deployment
-API URL: http://linkstationnode-env.eba-3jcv4kdk.eu-west-1.elasticbeanstalk.com
+
+## III. AWS Deployment
+Production API URL: http://linkstationnode-env.eba-3jcv4kdk.eu-west-1.elasticbeanstalk.com
 
