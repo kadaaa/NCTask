@@ -16,7 +16,7 @@ const NavBar = () => {
             <Menu.Item
                 as={Link}
                 to='/stations'
-                name='stations'
+                name='link stations'
                 active={activeItem === 'stations'}
                 onClick={() => setActiveItem('stations')}
             />
