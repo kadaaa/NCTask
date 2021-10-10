@@ -7,8 +7,16 @@
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "disc",
-        "resolveJsonModule": true
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "resolveJsonModule": true,
+        "paths": {
+            "*": [
+                "./node_modules/*",
+                "./src/types/*"
+            ]
+        }
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }

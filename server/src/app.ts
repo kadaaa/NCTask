@@ -5,7 +5,7 @@ import cors from 'cors';
 import stationRoutes from './routes/linkStations';
 
 const app = express();
-const port = process.env.port || 5555;
+const port = process.env.PORT || 80;
 app.set('port', port);
 const whitelist = ['http://localhost:3000']; // to-do add deployed client url
 app.use(cors({
