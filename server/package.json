@@ -6,7 +6,9 @@
   "author": "Khanh Dang",
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "dev": "export PORT=5555 && ts-node src/server.ts",
+    "start": "export NODE_ENV=production && ts-node src/server.ts",
     "test": "jest src/**/test"
   },
   "dependencies": {
