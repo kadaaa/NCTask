@@ -9,10 +9,4 @@ export class Point {
         this.y = y;
     }
 
-    getPoint(): TPoint {
-        return {
-            x: this.x,
-            y: this.y,
-        }
-    }
 }
